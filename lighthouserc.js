@@ -1,8 +1,9 @@
 module.exports = {
     ci: {
-      upload: {
-        target: 'lhci',
-      },
+        collect: {
+            staticDistDir: './',
+            url: './index.html',
+          },
       assert: {
           // "budgetsFile": "./budget.json"
         preset: 'lighthouse:recommended',
