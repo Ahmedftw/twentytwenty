@@ -21,7 +21,7 @@ jobs:
           lhci collect --url=http://localhost:8888 --numberOfRuns=1 --silent
       - name: Upload Artifact to Lighthouse CI Server
         run: |
-          npx lhci autorun
+          lhci upload
         env:
           LHCI_GITHUB_APP_TOKEN: ${{secrets.LHCI_GITHUB_APP_TOKEN}}
           LHCI_SERVER_BASE_URL: ${{secrets.LHCI_SERVER_BASE_URL}}

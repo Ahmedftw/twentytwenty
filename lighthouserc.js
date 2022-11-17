@@ -3,6 +3,9 @@ module.exports = {
       collect: {
             url: 'https://www.google.com/',
           },
+      upload: {
+        target: 'lhci',
+      },
       assert: {
           // "budgetsFile": "./budget.json"
         preset: 'lighthouse:recommended',
