@@ -2,7 +2,7 @@ module.exports = {
     ci: {
         collect: {
             staticDistDir: './',
-            url: './',
+            url: './index.php',
           },
       assert: {
           // "budgetsFile": "./budget.json"
