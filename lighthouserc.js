@@ -5,6 +5,8 @@ module.exports = {
           },
       upload: {
         target: 'lhci',
+        serverBaseUrl: '${{secrets.LHCI_SERVER_BASE_URL}}',
+        token: '${{secrets.LHCI_TOKEN}}'
       },
       assert: {
           // "budgetsFile": "./budget.json"
